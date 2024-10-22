@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5e5;
+    /* Added this for smoother text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+    /* Optional: Adding some padding */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .tenor-gif-embed {
+    display: flex;
+    max-width: 200px;
+    /* Ensure it doesn't overflow */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.container .btn {
+    display: flex;
+    gap: 25px;
+    /* Optional: Add some margin for better spacing */
+    margin-top: 20px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.btn a:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0.5rem 1.5rem 3rem rgba(0, 0, 0, 0.5);
+}
